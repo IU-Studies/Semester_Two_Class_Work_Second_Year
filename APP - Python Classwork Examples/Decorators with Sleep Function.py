@@ -1,16 +1,14 @@
+import time
+
 def decorator(fx):
-    def gx(a,b):
-        if a > b:
-            print(a-b)
-        else:
-            print(b-a)
+    def gx():
+        print("Program Start")
+        time.sleep(2)
+        print("Program End")
     return gx
-
+    
 @decorator
-def subtract(a,b):
-    return a-b
+def hello():
+    print("Hello")
 
-x = int(input("Enter First Number: "))
-y = int(input("Enter Second Number: "))
-
-subtract(x,y)
+hello()
