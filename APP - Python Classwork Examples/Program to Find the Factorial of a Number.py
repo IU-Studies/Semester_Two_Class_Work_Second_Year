@@ -10,4 +10,4 @@ user_input = int(input("Enter a number:- "))
 
 calculate_factorial = factorial(user_input)
 
-print(calculate_factorial)
+print("Factorial of",user_input,"is",calculate_factorial)
