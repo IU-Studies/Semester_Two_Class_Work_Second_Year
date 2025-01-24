@@ -11,4 +11,4 @@ user_input = int(input("Enter a number:- "))
 
 result = factorial(user_input)
 
-print(result)
+print("Factorial of",user_input,"is",result)
