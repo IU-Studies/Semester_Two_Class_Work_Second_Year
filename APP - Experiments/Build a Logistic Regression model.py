@@ -1,3 +1,7 @@
+#Build a Logistic Regression model using Scikit-learn to classify students into "Pass"
+#or "Fail" categories based on their study hours. Train the model on a dataset and
+#evaluate its performance using metrics such as accuracy score and confusion matrix.
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-file_path = r"C:\Users\mayur\Downloads\student_exam_data.csv"
+file_path = r"C:\Users\iu\Downloads\student_exam_data.csv"
 df = pd.read_csv(file_path)
 X = df[['Study Hours']]
 y = df['Pass/Fail']
