@@ -3,8 +3,7 @@
 #following architecture for your neural network:
 #• Input Layer: Accepts three features per data point.
 #• Hidden Layer: Contains 10 neurons with the ReLU activation function.
-#Output Layer: Contains two neurons with the softmax activation function
-for binary classification.
+#Output Layer: Contains two neurons with the softmax activation function for binary classification.
 
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
