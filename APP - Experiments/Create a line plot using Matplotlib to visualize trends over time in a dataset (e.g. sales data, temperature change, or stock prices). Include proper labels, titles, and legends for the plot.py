@@ -1,7 +1,11 @@
+# Create a line plot using Matplotlib to visualize trends over time in a dataset (e.g.,
+# sales data, temperature changes, or stock prices). Include proper labels, titles, and
+# legends for the plot.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"C:\Users\mayur\Downloads\temp.csv")
+df = pd.read_csv(r"C:\Users\iu\Downloads\temp.csv")
 
 df['dt'] = pd.to_datetime(df['dt'])
 
