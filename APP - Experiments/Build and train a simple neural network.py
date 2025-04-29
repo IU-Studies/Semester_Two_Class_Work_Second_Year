@@ -1,3 +1,11 @@
+#Build and train a simple neural network using TensorFlow to classify binary data.
+#The dataset consists of three input features and two output classes. Use the
+#following architecture for your neural network:
+#• Input Layer: Accepts three features per data point.
+#• Hidden Layer: Contains 10 neurons with the ReLU activation function.
+#Output Layer: Contains two neurons with the softmax activation function
+for binary classification.
+
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
