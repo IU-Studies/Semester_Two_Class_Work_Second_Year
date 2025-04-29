@@ -1,3 +1,5 @@
+# Create a bar plot and scatter plot to visualize relationships in a dataset using Matplotlib.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
