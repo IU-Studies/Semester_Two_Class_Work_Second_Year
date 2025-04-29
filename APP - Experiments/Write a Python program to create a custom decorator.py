@@ -1,3 +1,5 @@
+#Write a Python program to create a custom decorator that logs the name and execution time of a function.
+
 import time
 
 def decorator(func):
