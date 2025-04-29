@@ -1,3 +1,5 @@
+# Implement a Python class to manage student records, demonstrating inheritance and basic error handling for invalid inputs.
+
 class Person:
     def __init__(self, name, age):
         if not name or not isinstance(name, str):
