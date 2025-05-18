@@ -27,3 +27,30 @@ plt.ylabel("Exam Score")
 plt.title("Linear Regression: Study Hours vs. Exam Score")
 plt.legend()
 plt.show()
+
+
+"""
+#Simple approach
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+
+df = pd.read_csv("C:/Users/IU/Downloads/score.csv")
+
+X = df[["Hours"]]
+y = df["Scores"]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+model = LinearRegression().fit(X_train, y_train)
+
+y_pred = model.predict(X_test)
+print(mean_squared_error(y_test, y_pred))
+
+plt.scatter(X, y)
+plt.plot(X, model.predict(X), color='red')
+plt.show()
+"""
