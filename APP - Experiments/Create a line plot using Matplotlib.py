@@ -27,10 +27,9 @@ plt.show()
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"C:\Users\iu\Downloads\temp.csv")
-
-df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
+df = pd.read_csv(r"C:\Users\mayur\Downloads\temp.csv")
 
 plt.plot(df['Year'], df['Average_Fahrenheit_Temperature'], label='Temp (°F)')
 plt.show()
+
 """
