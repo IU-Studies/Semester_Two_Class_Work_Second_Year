@@ -3,17 +3,17 @@
 import time
 
 def decorator(func):
-    def gx(*args, **kwargs):
+    def gx(*args):
         start = time.time()
-        result = func(*args, **kwargs)
+        result = func(*args)
         end = time.time()
-        print("Function executed in", end - start, "seconds.")
+        print("executed in", end - start, "seconds.")
         return result
     return gx
 
 @decorator
 def demo():
-    name = input("Enter your name: ")
+    name = input("Enter name: ")
     print("Hello", name)
 
 demo()
