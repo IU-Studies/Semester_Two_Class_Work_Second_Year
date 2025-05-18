@@ -50,3 +50,47 @@ try:
 
 except ValueError as e:
     print(f"Error: {e}")
+
+
+
+
+""" 
+#Simple Approach
+
+class Person:
+    def __init__(self, name, age):
+        if not isinstance(name, str) or not name.strip():
+            raise ValueError("Name must be a non-empty string.")
+        if not isinstance(age, int) or age < 0:
+            raise ValueError("Age must be a non-negative integer.")
+
+        self.name = name
+        self.age = age
+
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+        self.grades = {}
+
+    def add_grade(self, subject, grade):
+        self.grades[subject] = grade
+
+    def get_average(self):
+        total = sum(self.grades.values())
+        count = len(self.grades)
+        return total / count if count > 0 else 0
+
+# Example use
+try:
+    s = Student("Anna", 17, "S001")
+    s.add_grade("Math", 90)
+    s.add_grade("English", 80)
+
+    print(s.name, s.age, s.student_id)
+    print("Grades:", s.grades)
+    print("Average:", s.get_average())
+except ValueError as e:
+    print("Error:", e)
+
+"""
